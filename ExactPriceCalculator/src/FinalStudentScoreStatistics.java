@@ -39,7 +39,7 @@ public class FinalStudentScoreStatistics {
             int totalScore = 0;
 
             // TODO 1: 점수 범위를 생각해 최고점과 최저점의 초기값을 정한다.
-            int maxScore = 0;
+            int maxScore = 100;
             int minScore = 0;
 
             int aCount = 0;
@@ -51,7 +51,7 @@ public class FinalStudentScoreStatistics {
             // TODO 2: 필요한 점수를 모두 입력할 때까지 반복하는 조건을 작성한다.
             while (validCount < studentCount) {
                 // TODO 3: 화면에 보여줄 학생 번호를 계산한다.
-                int number = 0;
+                int number = validCount + 1;
                 System.out.print(number + "번 점수: ");
                 int score = scanner.nextInt();
 
@@ -91,7 +91,7 @@ public class FinalStudentScoreStatistics {
             }
 
             // TODO 9: 소수점이 사라지지 않도록 평균을 계산한다.
-            double average = totalScore / studentCount * 0.0;
+            double average = (double)totalScore / studentCount;
 
             System.out.println("\n===== 통계 결과 =====");
             System.out.println("합계: " + totalScore);

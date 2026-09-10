@@ -50,11 +50,11 @@ public class FinalMultiplicationTable {
             System.out.println("2~9 범위를 순서대로 입력하세요.");
         } else {
             // TODO 2: 바깥쪽 for문의 초기식, 조건식, 증감식을 모두 작성한다.
-            for (int dan = startDan; dan < endDan; dan += 1) {
+            for (int dan = startDan; dan <= endDan; dan += 1) {
                 System.out.println("[" + dan + "단]");
 
                 // TODO 3: 안쪽 for문의 초기식, 조건식, 증감식을 모두 작성한다.
-                for (int number = 1; number < 9; number += 1) {
+                for (int number = 1; number <= 9; number += 1) {
                     // TODO 4: 한 줄에 출력할 구구단 계산 결과를 구한다.
                     int result = dan * number;
                     System.out.println(dan + " x " + number + " = " + result);
