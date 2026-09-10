@@ -73,11 +73,11 @@ public class FinalOrderKiosk {
                     System.out.print(productName + " 수량을 입력하세요: ");
                     quantity = scanner.nextInt();
                     // TODO 4: 사용할 수 없는 수량을 판별한다.
-                    if (quantity == 0) {
+                    if (quantity < 1) {
                         System.out.println("수량은 1개 이상이어야 합니다.");
                     }
                     // TODO 5: 올바른 수량이 들어올 때까지 반복하는 조건을 작성한다.
-                } while (quantity == 0);
+                } while (quantity < 1);
 
                 // TODO 6: 선택한 상품의 개수를 알맞은 변수에 누적한다.
                 if (menu == 1) {
