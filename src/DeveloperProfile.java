@@ -8,8 +8,8 @@ public class DeveloperProfile {
         String name = scanner.nextLine().trim();
 
         System.out.print("희망 직무: ");
-        String role = scanner.nextLine().trim();
 
+        String role = scanner.nextLine().trim();
         System.out.print("GitHub 주소: ");
         String githubUrl = scanner.nextLine().trim();
 

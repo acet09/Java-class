@@ -16,16 +16,21 @@ public class Main {
 //        System.out.printf("평점: %.2f%n",rating);
 //        System.out.printf("가능: %b%n", avaliable);
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("나이: ");
+//        int age = scanner.nextInt();
+//        scanner.nextLine();
+//        System.out.print("이름: ");
+//        String name = scanner.nextLine();
+//        // 남아 있던 줄바꿈을 읽어 name이 빈 문자열
+//
+//        System.out.println(name);
 
-        System.out.print("나이: ");
-        int age = scanner.nextInt();
-        scanner.nextLine();
-        System.out.print("이름: ");
-        String name = scanner.nextLine();
-        // 남아 있던 줄바꿈을 읽어 name이 빈 문자열
+        int tem = 12;
+        int cot = -tem;
 
-        System.out.println(name);
+        System.out.println(cot);
 
 
     }
