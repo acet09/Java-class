@@ -42,7 +42,7 @@ public class FinalMultiplicationTable {
         // TODO 1: 위의 입력 규칙을 만족하지 않는 경우를 하나의 조건식으로 작성한다.
 
         boolean invalid = false;
-        if (startDan >= 2 && endDan <= 9) {
+        if ((startDan >= 2 && startDan <= 9) && (endDan >= 2 && endDan <= 9)) {
             invalid = true;
         }
 
