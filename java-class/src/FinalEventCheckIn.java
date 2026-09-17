@@ -4,13 +4,11 @@ class StudentEntry {
     String studentId;
     String name;
 }
-
 public class FinalEventCheckIn {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StudentEntry[] entries = new StudentEntry[5];
         int cnt = 0;
-
         while (true) {
             System.out.println("\n[취업 특강 접수]");
             System.out.println("1 신청  2 명단  3 취소  4 현황  0 종료");
@@ -33,7 +31,6 @@ public class FinalEventCheckIn {
                         System.out.println("학번과 이름을 입력해주세요.");
                         break;
                     }
-
                     // TODO 2. 같은 학번이 이미 있는지 배열 전체를 확인하세요.
                     // TODO 3. null인 첫 칸을 찾고 StudentEntry 객체를 저장하세요.
                     for (int i = 0; i < entries.length; i++) {
@@ -49,10 +46,10 @@ public class FinalEventCheckIn {
                             inputStu.name = name;
                             inputStu.studentId = studentId;
                             entries[cnt++] = inputStu;
+                            System.out.println("학번:" + studentId + "\n이름:" + name + "\n등록이 완료되었습니다.");
                             break;
                         }
                     }
-
                     // TODO 4. 다섯 칸이 모두 찼다면 정원 마감을 출력하세요.
                     if (cnt > 4) {
                         System.out.println("정원이 마감되었습니다.");
@@ -66,7 +63,6 @@ public class FinalEventCheckIn {
                         System.out.println("동록된 신청자가 없습니다.");
                         break;
                     }
-
                     for (int i = 0; i < entries.length; i++) {
                         String chkName = "";
                         String chkId = "";
@@ -102,8 +98,8 @@ public class FinalEventCheckIn {
                     break;
                 case "4":
                     // TODO 7. null이 아닌 칸을 세어 현재 인원과 남은 자리를 출력하세요.
-                    System.out.println("현재 인원 :" + cnt);
-                    System.out.println("남은 자리 :" + (entries.length - cnt));
+                    System.out.println("현재 인원 :" + cnt + "명");
+                    System.out.println("남은 자리 :" + (entries.length - cnt) + "명");
                     break;
                 default:
                     System.out.println("0부터 4까지 선택하세요.");
