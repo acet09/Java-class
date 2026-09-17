@@ -35,6 +35,7 @@ public class FinalEventCheckIn {
                     }
 
                     // TODO 2. 같은 학번이 이미 있는지 배열 전체를 확인하세요.
+                    // TODO 3. null인 첫 칸을 찾고 StudentEntry 객체를 저장하세요.
                     for (int i = 0; i < entries.length; i++) {
                         if (entries[i] != null) {
                             if (entries[i].studentId.equals(studentId)) {
@@ -42,10 +43,7 @@ public class FinalEventCheckIn {
                                 break;
                             }
                         }
-                    }
 
-                    // TODO 3. null인 첫 칸을 찾고 StudentEntry 객체를 저장하세요.
-                    for (int i = 0; i < entries.length; i++) {
                         if (entries[i] == null) {
                             StudentEntry inputStu = new StudentEntry();
                             inputStu.name = name;
